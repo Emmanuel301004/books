@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    line-height: 0.5;
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+    background-image: url(img/pexels-felixmittermeier-956981.jpg);
+    background-size: contain;
+}
+header{
+    height: 100px;
+    border: 1px solid black;
+    background-color: black;
+}
+nav{
+    display: flex;
+    margin-top: 1rem;
+}
+nav .logo img{
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+    background-color: white;
+    clip-path: circle();
+}
+nav .logo{
+    margin-right: 20vw;
+    margin-left: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    margin-top: 1rem;
+    
+}
+.searchBox {
+    display: flex;
+    width: 630px;
+    height: 60px;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .searchButton {
+    color: white;
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+  /*hover effect*/
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+  }
+  /*button pressing effect*/
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  .searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+  }
+
+/*1st set of links*/
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+  }
+  
+  .cards .red {
+    background-color: orangered;
+    border: 1px solid black;
+  }
+  
+  .cards .blue {
+    background-color: #3b82f6;
+    border: 1px solid black;
+  }
+  
+  .cards .green {
+    background-color: rgb(239, 239, 24);
+    border: 2px solid black;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    transform: scale(0.9, 0.9);
+  }
+
+
+  /* second set of links*/
+  .cards1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.cards1 .red {
+    background-color: orangered;
+    border: 1px solid black;
+}
+
+.cards1 .blue {
+    background-color: #3b82f6;
+    border: 1px solid black;
+}
+
+.cards1 .green {
+    background-color: rgb(239, 239, 24);
+    border: 2px solid black;
+}
+
+.cards1 .card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards1 .card1 p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards1 .card1 p.second-text {
+    font-size: .7em;
+}
+
+.cards1 .card1:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards1:hover > .card1:not(:hover) {
+    
+    transform: scale(0.9, 0.9);
+}
+
+
+/* third set of links*/
+.cards2 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 10vh;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cards2 .red {
+  background-color: orangered;
+  border: 1px solid black;
+}
+
+.cards2 .blue {
+  background-color: #3b82f6;
+  border: 1px solid black;
+}
+
+.cards2 .green {
+  background-color: rgb(239, 239, 24);
+  border: 2px solid black;
+}
+
+.cards2 .card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards2 .card2 p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards2 .card2 p.second-text {
+  font-size: .7em;
+}
+
+.cards2 .card2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards2:hover > .card2:not(:hover) {
+  transform: scale(0.9, 0.9);
+}
+
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
